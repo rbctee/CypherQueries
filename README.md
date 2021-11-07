@@ -6,4 +6,4 @@ The repository contains some notes regarding [Cypher Queries](https://neo4j.com/
 
 ## Author
 
-[Robert Raducioiu](https://www.linkedin.com/in/rbct/) ([0xrbct](https://docs.rbct.it/))
+[Robert Raducioiu](https://www.linkedin.com/in/rbct/) ([rbct](https://docs.rbct.it/))
