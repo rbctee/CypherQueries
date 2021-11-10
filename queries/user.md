@@ -17,3 +17,13 @@ Search for **owned** admin users:
 ```txt
 MATCH (u:User) WHERE u.owned = true AND u.enabled = true AND u.admincount = true RETURN n
 ```
+
+Search for passwords in descriptions:
+
+```txt
+# manual
+MATCH (u:User) RETURN u.description
+
+# automatic
+MATCH (u:User) WHERE (toLower(u.description) CONTAINS 'pwd' OR toLower(u.description) CONTAINS 'psw' OR toLower(u.description) CONTAINS 'password' OR toLower(u.description) CONTAINS 'pass') AND u.enabled = True RETURN u
+```
